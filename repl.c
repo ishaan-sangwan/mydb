@@ -31,10 +31,10 @@ int main(int argc, char* argv[]){
         Statement statement;
         switch (prepare_statement(input_buffer, &statement)){
             case PREPARE_SUCCESS:
-                printf("Statement Compile successfully");
+                printf("Statement Compile successfully \n");
                 break;
             case PREPARE_UNRECOGNIZED_STATEMENT:
-                printf("Statement Compile failed");
+                printf("Statement Compile failed \n");
                 continue;
         }
     }

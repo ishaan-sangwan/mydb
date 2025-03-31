@@ -10,7 +10,7 @@ PrepareResults prepare_statement(InputBuffer* inputbuffer,
         statement->type = STATEMENT_SELECT;
         return PREPARE_SUCCESS;
    } 
-   else if ( strcmp(inputbuffer->buffer, "inser") == 0  ){
+   else if ( strncmp(inputbuffer->buffer, "insert", 6) == 0  ){
         statement->type = STATEMENT_INSERT;
         return PREPARE_SUCCESS;
    }
